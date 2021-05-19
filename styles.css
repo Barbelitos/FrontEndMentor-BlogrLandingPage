@@ -104,8 +104,8 @@ a {
     overflow: hidden;
 }
 
-#product_menu, 
-#company_menu, 
+#product_menu,
+#company_menu,
 #connect_menu {
     background-color: rgb(247, 242, 242);
     width: 80%;
@@ -200,6 +200,10 @@ a {
     width: 100%;
 }
 
+.editor_desktop {
+    display: none;
+}
+
 .text_box {
     text-align: center;
     width: 90%;
@@ -227,7 +231,7 @@ a {
     background-size: 170%;
     background-position: 50% -280px;
     border-radius: 0 120px 0 120px;
-    height: 36em;
+    height: 38em;
 }
 
 .phones_img {
@@ -253,6 +257,10 @@ a {
 .laptop_mobile {
     width: 100%;
     margin: 4.5em auto 2em auto;
+}
+
+.laptop_desktop {
+    display: none;
 }
 
 .footer_section {
@@ -288,16 +296,117 @@ a {
     color: var(--footer-text);
 }
 
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 400px) {
+    #second_section {
+        height: 45em;
+    }
+}
+
+@media only screen and (min-width: 570px) {
+    #second_section {
+        height: 52em;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    .first_section h2{
+        font-size: 20em;
+    }
+
+    
+
+    
+
+    
+
+    #second_section {
+        display: flex;
+        height: auto;
+    }
+
+    
+    .laptop_container {
+        overflow: hidden;
+    }
 
 
+    footer {
+        margin-top: 5em;
+        display: flex;
+        height: 20em;
+    }
 
+    .footer_logo {
+        text-align: left;
+        margin: 0 auto auto 7em;
+    }
 
+    .footer_logo img {
+        margin-top: 2.8em;
+    }
 
+    .footer_content {
+        text-align: left;
+        display: flex;
+        margin: 3.2em auto 3em 0em;
+        gap: 25%;
+        width: 60%;
+    }
+}
 
+@media only screen and (min-width: 1250px) {
+    #first_section_content {
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: hidden;
+    }
 
+    .text_container {
+        padding-left: 4em;
+        padding-right: 1.5em;
+        margin: auto;
+        width: 40%;
+    }
 
+    .text_box {
+        text-align: left;
+        margin-top: 4em;
+    }
 
+    .text_box h3 {
+        font-size: 1.5em;
+    }
 
+    .text_box p {
+        font-size: 16px;
+    }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+    #third_section {
+        display: flex;
+        width: 100%;
+    }
+
+    .editor_mobile {
+        display: none;
+    }
+
+    .editor_desktop {
+        display: block;
+        margin-right: -260px;
+    }
+
+    .laptop_container {
+        overflow: hidden;
+    }
+
+    .laptop_mobile {
+        display: none;
+    }
+
+    .laptop_desktop {
+        display: block;
+        margin-left: -270px;
+    }
+}
