@@ -119,6 +119,12 @@ a {
   border-radius: 6px;
 }
 
+#product_menu a:hover,
+#company_menu a:hover,
+#connect_menu a:hover {
+  font-weight: 600;
+}
+
 .rotate {
   transform: rotate(180deg);
 }

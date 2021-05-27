@@ -56,16 +56,34 @@ closeButton.addEventListener("click", () => {
 window.addEventListener("click", function (event) {
   if (!event.target.matches("#product_button")) {
     productMenu.classList.add("submenu");
+    if (arrowProduct.classList.contains("rotate")) {
+      arrowProduct.classList.remove("rotate");
+    }
+    if (lightArrowProduct.classList.contains("rotate")) {
+      lightArrowProduct.classList.remove("rotate");
+    }
   }
 });
 window.addEventListener("click", function (event) {
   if (!event.target.matches("#company_button")) {
     companyMenu.classList.add("submenu");
+    if (arrowCompany.classList.contains("rotate")) {
+      arrowCompany.classList.remove("rotate");
+    }
+    if (lightArrowCompany.classList.contains("rotate")) {
+      lightArrowCompany.classList.remove("rotate");
+    }
   }
 });
 
 window.addEventListener("click", function (event) {
   if (!event.target.matches("#connect_button")) {
     connectMenu.classList.add("submenu");
+    if (arrowConnect.classList.contains("rotate")) {
+      arrowConnect.classList.remove("rotate");
+    }
+    if (lightArrowConnect.classList.contains("rotate")) {
+      lightArrowConnect.classList.remove("rotate");
+    }
   }
 });
